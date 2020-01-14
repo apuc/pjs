@@ -42,8 +42,6 @@ class PhantomParser {
     {
         if ($this->page != 1) {
             $url = 'https://www.shutterstock.com/ru/search/' . $this->keyword . '?page=' . $this->page;
-        } elseif ($this->page == 10) {
-            return;
         } else {
             $url = 'https://www.shutterstock.com/ru/search/' . $this->keyword;
         }
