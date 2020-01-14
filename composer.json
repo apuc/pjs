@@ -1,0 +1,21 @@
+{
+    "name": "test/phantom",
+    "authors": [
+        {
+            "name": "Shepilov Maxim",
+            "email": "shepilovmx@gmail.com"
+        }
+    ],
+    "scripts": {
+        "post-install-cmd": [
+          "PhantomInstaller\\Installer::installPhantomJS"
+        ],
+        "post-update-cmd": [
+          "PhantomInstaller\\Installer::installPhantomJS"
+        ]
+    },
+    "require": {
+        "jonnyw/php-phantomjs": "4.*",
+        "electrolinux/phpquery": "^0.9.6"
+    }
+}
