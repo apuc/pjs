@@ -7,7 +7,7 @@
         $id = trim($_POST['id']);
         $keyword = trim($_POST['keyword']);
         $parser = new PhantomParser($id, $keyword);
-        $res = $parser->run();
+        $resultArray = $parser->run();
     }
 
     require_once(__DIR__ . '\form.php');

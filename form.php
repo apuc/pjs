@@ -10,6 +10,7 @@
 </head>
 <body>
     <div class="container" style="display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100vh;">
+        <div class="alert alert-warning<?= isset($resultArray['limitMessage']) ? '' : ' d-none' ?>"><?= $resultArray['limitMessage'] ?></div>
         <form method="POST">
                 <div class="form-group">
                     <label for="id-field">ID</label>
@@ -22,8 +23,8 @@
                 <input type="submit" class="btn btn-primary" value="Отправить">
         </form>
         <div class="d-flex justify-content-center mt-5">
-            <h4 class="mr-3">Page: <?= $res['page'] ?></h4>
-            <h4 class="ml-3">Position: <?= $res['position'] ?></h4>
+            <h4 class="mr-3">Page: <?= $resultArray['page'] ?></h4>
+            <h4 class="ml-3">Position: <?= $resultArray['position'] ?></h4>
         </div>
     </div>
 </body>
