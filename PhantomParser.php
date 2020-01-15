@@ -70,7 +70,7 @@ class PhantomParser {
     private function setupClient()
     {
         $client = Client::getInstance();
-        $client->getEngine()->setPath(dirname(__FILE__) . '\vendor\bin\\phantomjs.exe');
+        $client->getEngine()->setPath(dirname(__FILE__) . '/vendor/bin/phantomjs');
         $client->isLazy();
         return $client;
     }
